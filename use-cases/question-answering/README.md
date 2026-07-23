@@ -30,7 +30,9 @@ Call the application that will use a chat model to answer your questions.
 ```shell
 http --raw "What is Iorek's biggest dream?" :8080/chat/doc -b --pretty none
 ```
+Sends the question "What is Iorek's biggest dream?" as a raw HTTP request to the /chat/doc endpoint on the local server (port 8080). The response is returned in a minimal, machine-readable format without pretty-printing.
 
 ```shell
 http --raw "Who is Lucio?" :8080/chat/doc -b --pretty none
 ```
+Sends the question "Who is Lucio?" to the same local document chat endpoint. It queries the document-aware chat service and outputs the raw response without formatting.
